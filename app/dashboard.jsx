@@ -1,33 +1,39 @@
-import { Text, View, Pressable, ScrollView, Image } from "react-native";
+import { Text, View, Pressable, ScrollView, Image } from "react-native"
 import { LinearGradient } from 'expo-linear-gradient'
-import Carousel from "react-native-snap-carousel";
-import { Ionicons } from '@expo/vector-icons';
+import Carousel from "react-native-snap-carousel"
+import { Ionicons } from '@expo/vector-icons'
+import items from '../data/string/items.json'
 
+//dead poll
 export default function Dashboard() {
     return (
         <LinearGradient
             colors={['#86efac', '#93c5fd']}
+            // style={{ flex: 1, paddingTop: 30 }}
             className='flex-1 pt-10  '
         >
-            <View className='justify-between'>
+            <View className='flex-row p-2'>
                 <Pressable
                     onPress={() => { }}
-                    className='p-2 bg-white'
+                    className='p-2 bg-white/50 rounded-xl'
                 >
-                    <Ionicons name="menu-outline" size={24} color="black" />
+                    <Ionicons name="menu" size={24} color="black" />
                 </Pressable>
-                <View className='space-x-2'>
+                <View className='flex-1'>
+                    <Text className=''></Text>
+                </View>
+                <View className='flex--row space-x-2'>
                     <Pressable
                         onPress={() => { }}
-                        className='p-2 bg-white'
+                        className='p-2 bg-white/50 rounded-xl'
                     >
-                        <Ionicons name="map-outline" size={24} color="black" />
+                        <Ionicons name="map" size={24} color="black" />
                     </Pressable>
                     <Pressable
                         onPress={() => { }}
-                        className='p-2 bg-white'
+                        className='p-2 bg-white/50 rounded-xl'
                     >
-                        <Ionicons name="cart-outline" size={24} color="black" />
+                        <Ionicons name="cart" size={24} color="black" />
                     </Pressable>
                 </View>
             </View>
@@ -39,14 +45,15 @@ export default function Dashboard() {
             >
                 <Pressable onPress={() => { }}>
                     <LinearGradient
-                        colors={['#93c5fd', '#86efac']}
+                        colors={['#3b82f6', '#22c55e']}
                         start={{ x: 0, y: 0 }}
                         end={{ x: 1, y: 1 }}
-                        className='p-2 '
+                        className='p-2 rounded-3xl'
                     >
                         <Text className='text-white text-center text-xl'>Kurs</Text>
                     </LinearGradient>
                 </Pressable>
+                
             </ScrollView>
 
             <View>
@@ -54,18 +61,8 @@ export default function Dashboard() {
                     containerCustomStyle={{
                         overflow: 'visible'
                     }}
-                    data={[
-                        {
-                            name: 'Full',
-                            price: '70',
-                            pics: 'full.png',
-                        },
-                        {
-                            name: 'Firfir',
-                            price: '60',
-                            pics: 'firfir.png',
-                        },
-                    ]}
+                    data={items}
+                    loop={true}
                     renderItem={({ item }) =>
                         <View className='relative w-60 h-96 bg-white/50 rounded-2xl '>
                             <View className='absolute top-0 left-0 right-0'>
@@ -75,12 +72,12 @@ export default function Dashboard() {
                                     className='w-60 h-60 rounded-full'
                                 />
                             </View>
-                            <View className='flex-1 '>
+                            <View className='flex-1 bg-red-500/50'>
                                 <Image
                                     source={`../data/image/${item.pics}`}
                                     className='w-40 h-40 rounded-full'
                                 />
-                                <View className=''>
+                                <View className='bg-yellow-500/50'>
                                     <Text className='text-center text-xl'>{item.name}</Text>
                                 </View>
                             </View>
@@ -97,6 +94,41 @@ export default function Dashboard() {
                     }}
                 />
             </View>
+
+            <Carousel
+                containerCustomStyle={{
+                    overflow: 'visible'
+                }}
+                data={[
+                    {
+                        name: 'Full',
+                        price: '70',
+                        pics: 'full.png',
+                    },
+                    {
+                        name: 'Firfir',
+                        price: '60',
+                        pics: 'firfir.png',
+                    },
+                ]}
+                loop={true}
+                renderItem={({ item }) =>
+                    <View className='bg-white/50 rounded-2xl '>
+                        <View className=''>
+                            <Text className='text-center text-xl'>{item.name}</Text>
+                        </View>
+                    </View>
+                }
+                firstItem={1}
+                inactiveSlideOpacity={0.75}
+                inactiveSlideScale={1}
+                sliderWidth={400}
+                itemWidth={260}
+                slideStyle={{
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            />
         </LinearGradient>
     )
 }

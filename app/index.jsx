@@ -1,9 +1,7 @@
-import { Text, View } from "react-native";
-import { useRouter } from "expo-router";
+import { Redirect } from "expo-router";
 
 export default function Index() {
-    const router = useRouter()
-    return ( 
-        router.replace('dashboard')
+    return (
+        <Redirect href={'dashboard'} />
     )
 }
