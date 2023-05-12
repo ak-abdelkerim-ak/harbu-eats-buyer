@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Selam Muslim Restaurant",
+        "distance": "1.3",
+        "pics": "https://image.cnbcfm.com/api/v1/image/106885224-1621429503610-Panera_NextGen_Exterior_Front.jpg?v=1621429538&w=1600&h=900",
+        "time": 15
+    },
+    {
+        "id": 2,
+        "name": "Billa Cafe",
+        "distance": "0.6",
+        "pics": "https://image.cnbcfm.com/api/v1/image/106885224-1621429503610-Panera_NextGen_Exterior_Front.jpg?v=1621429538&w=1600&h=900",
+        "time": 5
+    }
+]

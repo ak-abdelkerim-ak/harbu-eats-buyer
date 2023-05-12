@@ -1,16 +1,20 @@
 [
     {
         "id": 1,
-        "name": "Full",
-        "pics": "full.png",
-        "Price": "200",
+        "pics": "https://www.chefspencil.com/wp-content/uploads/Dulet.jpg.webp",
+        "name": "Dulet",
+        "price": 150,
+        "time": 20,
+        "seller": 1,
         "amount": "2"
     },
     {
         "id": 2,
-        "name": "Firfir",
-        "pics": "firfir.png",
-        "Price": "60",
+        "pics": "https://www.chefspencil.com/wp-content/uploads/Tekel-Gomen-960x729.jpg.webp",
+        "name": "Kawlo Wet",
+        "price": 70,
+        "time": 5,
+        "seller": 2,
         "amount": "1"
     }
 ]

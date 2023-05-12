@@ -1,14 +1,133 @@
-[
-    {
-        "id": 1,
-        "name": "Full",
-        "pics": "full.png",
-        "Price": "200"
+{
+    "1": {
+        "Kurs": [
+            {
+                "id": 1,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Dulet.jpg.webp",
+                "name": "Dulet",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 2,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Menchet-Wot-960x640.jpeg.webp",
+                "name": "Minchet",
+                "Price": 70,
+                "time": 20
+            }
+        ],
+        "Msa":[
+            {
+                "id": 1,
+                "pics": "https://images.squarespace-cdn.com/content/v1/51c325ece4b01f1752ee3259/1592488907301-HYXR2WFC7BXFJHXMOL8U/DSC00054.jpg?format=1000w",
+                "name": "Tibs",
+                "Price": 200,
+                "time": 35
+            },
+            {
+                "id": 2,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Kitfo-960x960.jpg.webp",
+                "name": "Kitfo",
+                "Price": 200,
+                "time": 35
+            },
+            {
+                "id": 3,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Kekel-.jpg.webp",
+                "name": "Kekel",
+                "Price": 200,
+                "time": 35
+            },
+            {
+                "id": 4,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/46254440824_e9e0f17aea_c.jpg",
+                "name": "Doro wet",
+                "Price": 200,
+                "time": 35
+            }
+        ]
     },
-    {
-        "id": 2,
-        "name": "Firfir",
-        "pics": "firfir.png",
-        "Price": "60"
+    "2":{
+        "Kurs":[
+            {
+                "id": 1,
+                "pics": "https://i.pinimg.com/originals/f1/f6/b4/f1f6b4a5c79488013b6ba30232c28c90.jpg",
+                "name": "Kita Firfir",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 2,
+                "pics": "https://flavorverse.com/wp-content/uploads/2022/04/Enkulal-Firfir.jpg",
+                "name": "Enkulal Firfir",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 3,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Chechebsa-960x588.jpeg.webp",
+                "name": "Chechebsa",
+                "Price": 70,
+                "time": 35
+            },
+            {
+                "id": 4,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Kinche--960x640.jpg.webp",
+                "name": "Kinche",
+                "Price": 70,
+                "time": 35
+            },
+            {
+                "id": 5,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Bula-1.jpg",
+                "name": "Bula",
+                "Price": 70,
+                "time": 35
+            }
+        ],
+        "Msa":[
+            {
+                "id": 1,
+                "pics": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Taita_and_shiro.jpg",
+                "name": "Tegabino",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 2,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Meser-Wot-960x540.jpg.webp",
+                "name": "Msr Wet",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 3,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Azifa-1-960x640.jpg.webp",
+                "name": "Azifa",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 4,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Beyayenetu.jpg",
+                "name": "Beyaynet",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 5,
+                "pics": "https://www.chefspencil.com/wp-content/uploads/Tekel-Gomen-960x729.jpg.webp",
+                "name": "Kawlo Wet",
+                "Price": 70,
+                "time": 20
+            },
+            {
+                "id": 6,
+                "pics": "https://theethiopianfood.com/wp-content/uploads/Firfir-2.jpg",
+                "name": "Firfir",
+                "Price": 60,
+                "time": 20
+            }
+        ]
     }
-]
+}
